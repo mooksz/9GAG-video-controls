@@ -1,0 +1,14 @@
+{
+	"name": "9GAG video controls",
+	"description": "Removes the 9gag volume button. And shows default HTML5 video controls.",
+	"version": "1.0",
+	"manifest_version": 3,
+	"content_scripts": [
+		{
+			"matches": ["http://9gag.com/*", "https://9gag.com/*"],
+			"js": ["main.js"],
+			"run_at": "document_end"
+		}
+	],
+	"permissions": []
+}
