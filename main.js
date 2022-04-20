@@ -7,7 +7,7 @@ function mh9gagcontrols_ready(fn) {
 }
 
 function mh9gagcontrols_updateControls() {
-	var videos = document.querySelectorAll("video[controls]");
+	var videos = document.querySelectorAll("video:not([controls])");
 	for (var i = 0; i < videos.length; i++) {
 		videos[i].controls = true;
 	}
